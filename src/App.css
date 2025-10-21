@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.App {
+  width: 100%;
+  max-width: 600px;
+}
+
+.app-container {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e3f2fd;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.app-title {
+  font-size: 2.2rem;
+  background: linear-gradient(135deg, #1976d2 0%, #2196f3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.app-subtitle {
+  color: #90a4ae;
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+.content-container {
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-footer {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #eceff1;
+  color: #90a4ae;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .app-title {
+    font-size: 1.8rem;
+  }
+
+  .app-container {
+    padding: 24px;
+  }
+}

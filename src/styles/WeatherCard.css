@@ -1,0 +1,94 @@
+.weather-card {
+  width: 100%;
+  border-radius: 20px;
+  padding: 32px;
+  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 50%, #90caf9 100%);
+  box-shadow: 0 8px 24px rgba(33, 150, 243, 0.15);
+  animation: fadeIn 0.5s ease;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.weather-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.city-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #1565c0;
+}
+
+.weather-date {
+  font-size: 0.85rem;
+  color: #546e7a;
+  font-weight: 500;
+}
+
+.weather-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.temperature-section {
+  text-align: center;
+}
+
+.temperature {
+  font-size: 4.5rem;
+  font-weight: 300;
+  margin: 20px 0 10px;
+  color: #0d47a1;
+  letter-spacing: -2px;
+}
+
+.weather-description {
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  margin-bottom: 12px;
+  color: #37474f;
+  font-weight: 500;
+}
+
+.temp-range {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  font-size: 0.95rem;
+  color: #546e7a;
+  font-weight: 500;
+}
+
+.temp-range span {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .weather-card {
+    padding: 24px;
+  }
+
+  .city-name {
+    font-size: 1.5rem;
+  }
+
+  .temperature {
+    font-size: 3.5rem;
+  }
+}

@@ -1,0 +1,56 @@
+.error-container {
+  text-align: center;
+  padding: 40px 24px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  border: 1px solid #ffebee;
+}
+
+.error-icon {
+  font-size: 3.5rem;
+  margin-bottom: 16px;
+  animation: shake 0.5s ease;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  75% { transform: translateX(10px); }
+}
+
+.error-container h3 {
+  color: #37474f;
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.error-container p {
+  color: #78909c;
+  margin-bottom: 24px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.retry-button {
+  padding: 12px 32px;
+  font-size: 0.95rem;
+  background: linear-gradient(135deg, #1976d2 0%, #2196f3 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(33, 150, 243, 0.3);
+}
+
+.retry-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(33, 150, 243, 0.4);
+}
+
+.retry-button:active {
+  transform: translateY(0);
+}
